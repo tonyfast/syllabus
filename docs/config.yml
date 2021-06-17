@@ -22,7 +22,7 @@ html:
   extra_footer: ''
   google_analytics_id: ''
   home_page_in_navbar: true
-  baseurl: ''
+  baseurl: syllabus
   comments:
     hypothesis: false
     utterances: false
