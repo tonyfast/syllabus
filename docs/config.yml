@@ -12,6 +12,7 @@ exclude_patterns:
 - old
 - .pytest_cache
 - Untitled*
+- .nox
 html:
   favico: ''
   use_edit_page_button: false
@@ -32,7 +33,6 @@ sphinx:
   - sphinx.ext.todo
   - sphinx.ext.autodoc
   - sphinx.ext.viewcode
-  - sphinx-jsonschema
   local_extensions: {}
   config: 
     html_baseurl: "https://schemata.readthedocs.io/en/latest/"
