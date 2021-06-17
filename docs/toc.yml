@@ -1,13 +1,2 @@
 format: jb-book
 root: index
-defaults:
-  numbered: True
-parts:
-  - chapters:
-    - file: docs/i
-    - file: docs/ii
-    - file: docs/iii
-    - file: docs/iv
-    - file: docs/v
-    - file: docs/vi
-    - file: docs/vii
