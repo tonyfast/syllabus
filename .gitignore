@@ -1,0 +1,5 @@
+_build
+*-checkpoint.*
+*.pyc
+.doit*
+Untitled*
