@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>writing &#8212; writers workshop</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://schemata.readthedocs.io/en/latest/docs/i.md.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">writers workshop</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   a workshop in with writing with code
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="ii.html">
+   reading
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="iii.html">
+   testing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="iv.html">
+   publishing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="v.html">
+   styling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vi.html">
+   readme
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="vii.html">
+   performance
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/docs/i.md.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/i.md.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#you-are-your-first-audience">
+   you are your first audience
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#guidance-for-you-your-first-audience">
+     guidance for you, your first audience
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bounding-your-ideas">
+   bounding your ideas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   background
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#markdown-syntax">
+     markdown syntax
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#widespread-adoption">
+       widespread adoption
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#literate-programming">
+     literate programming
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#computational-notebook-interfaces">
+     computational notebook interfaces
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#computational-notebook-formats">
+     computational notebook formats
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#writing-things-you-ll-want-to-read">
+   writing things you’ll want to read
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="writing">
+<h1>writing<a class="headerlink" href="#writing" title="Permalink to this headline">¶</a></h1>
+<p>the goal of writing is to bring meaning to the abstract.</p>
+<ol class="simple">
+<li><p>writing for fun and pleasure</p></li>
+<li><p>our first introduction into literate programs.</p></li>
+<li><p>writing for ourselves.</p></li>
+<li><p>bounding ideas and time</p></li>
+<li><p>homeworks</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>## writing for pleasure
+
+we are going to relearn to write so that would can find joy and pleasure in our writing.
+we&#39;ll be introduced to a new style of writing, literate programming, that opens up
+the possibilities of meaning in literature.
+
+---
+---
+
+&gt; There is, finally between science and literature, a third margin
+which science must reconquer, that of pleasure.
+
+&gt;&gt; * [roland barthes] [science vs literature]
+
+---
+
+&gt; My hope is that the ability to make explanations more natural will cause 
+&gt; more programmers to discover the joys of literate programming, 
+&gt; because I believe it’s quite a pleasure to combine verbal and mathematical skills; 
+&gt; but perhaps I’m hoping for too much.
+
+&gt;&gt; * [donald knuth] [literate programming]
+
+---
+---
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/syllabus/syllabus/docs/i.md.ipynb</span>, line 1)</p>
+<p>Non-consecutive header level increase; 0 to 2 [myst.header]</p>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## discussion</span>
+
+<span class="o">&gt;&gt;</span> <span class="o">&gt;</span> <span class="n">What</span> <span class="n">makes</span> <span class="n">writing</span> unfun<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/syllabus/syllabus/docs/i.md.ipynb</span>, line 1)</p>
+<p>Non-consecutive header level increase; 0 to 2 [myst.header]</p>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    
+    <span class="kn">import</span> <span class="nn">graphviz</span>
+    <span class="n">hommage</span> <span class="o">=</span> <span class="n">graphviz</span><span class="o">.</span><span class="n">Source</span><span class="p">(</span>
+        <span class="sd">&quot;&quot;&quot;digraph {rankdir=LR WEB-&gt;TEX[label=WEAVE] TEX-&gt;DVI[label=TEX] WEB-&gt;PAS[label=TANGLE] PAS-&gt;REL[label=PASCAL]}&quot;&quot;&quot;</span>
+    <span class="p">)</span>
+    <span class="n">md</span> <span class="o">=</span> <span class="n">graphviz</span><span class="o">.</span><span class="n">Source</span><span class="p">(</span>
+        <span class="sd">&quot;&quot;&quot;digraph {rankdir=LR MD-&gt;HTML[label=WEAVE]}&quot;&quot;&quot;</span>
+    <span class="p">)</span>
+    <span class="n">nb</span> <span class="o">=</span> <span class="n">graphviz</span><span class="o">.</span><span class="n">Source</span><span class="p">(</span>
+        <span class="sd">&quot;&quot;&quot;digraph {rankdir=LR IPYNB-&gt;JSON[label=WEAVE] JSON-&gt;HTML[label=nbcovert] </span>
+<span class="sd">        IPYNB-&gt;JSON[label=TANGLE] JSON-&gt;PY[label=nbcovert]}&quot;&quot;&quot;</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## literate programming</span>
+
+<span class="n">literate</span> <span class="n">programs</span> <span class="n">treat</span> <span class="n">programs</span> <span class="k">as</span> <span class="n">essays</span> <span class="n">where</span> <span class="n">literate</span> <span class="ow">and</span> <span class="n">computational</span> <span class="n">excellence</span> <span class="n">are</span> <span class="n">a</span> <span class="n">beacon</span><span class="o">.</span>
+
+<span class="o">*</span> <span class="n">__tangle__</span> <span class="n">narrative</span> <span class="n">into</span> <span class="n">code</span>
+<span class="o">*</span> <span class="n">__weave__</span> <span class="n">code</span> <span class="n">into</span> <span class="n">narrative</span>
+
+<span class="p">{{</span><span class="n">hommage</span><span class="p">}}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/syllabus/syllabus/docs/i.md.ipynb</span>, line 1)</p>
+<p>Non-consecutive header level increase; 0 to 2 [myst.header]</p>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>the moral principle behind literate programming is that programs should acheive literary excellence.
+
+
+
+&gt;  By coining the phrase “literate programming,” I am imposing a moral commitment
+on everyone who hears the term; surely nobody wants
+to admit writing an illiterate program.
+&gt;&gt; * [donald knuth] [literate programming]
+
+in traditional non-literate programming we measure the computational quality of the work, 
+and in literature we measure the literary qualities. any attempt to measure the 
+quality of code in traditional literature or the literary qualities of code in programs
+is ill-posed outside of the literate programming framework.
+
+the practice of literate programming unifies much of our work as writing or composition.
+we measure all works from both their literary and computational qualities. in literate programming,
+narrative and code cooperate to bring meaning to otherwise abstract objects like functions, classes,
+or data. forevermore, the narrative and code are inextricably linked, neither language takes priority rather
+the composition of cooperative languages.
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>the moral principle behind literate programming is that programs should acheive literary excellence.</p>
+<blockquote>
+<div><p>By coining the phrase “literate programming,” I am imposing a moral commitment
+on everyone who hears the term; surely nobody wants
+to admit writing an illiterate program.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>[donald knuth] [literate programming]</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+<p>in traditional non-literate programming we measure the computational quality of the work,
+and in literature we measure the literary qualities. any attempt to measure the
+quality of code in traditional literature or the literary qualities of code in programs
+is ill-posed outside of the literate programming framework.</p>
+<p>the practice of literate programming unifies much of our work as writing or composition.
+we measure all works from both their literary and computational qualities. in literate programming,
+narrative and code cooperate to bring meaning to otherwise abstract objects like functions, classes,
+or data. forevermore, the narrative and code are inextricably linked, neither language takes priority rather
+the composition of cooperative languages.</p>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### a little history of [literate programming]</span>
+
+<span class="p">[</span><span class="n">literate</span> <span class="n">programming</span><span class="p">]</span> <span class="n">was</span> <span class="n">presented</span> <span class="ow">in</span> <span class="mi">1984</span> <span class="n">by</span> <span class="p">[</span><span class="n">Donald</span> <span class="n">Knuth</span><span class="p">]</span><span class="o">.</span>
+
+<span class="o">*</span> <span class="n">__pascal__</span> <span class="n">programming</span> <span class="n">language</span>
+<span class="o">*</span> <span class="n">__tex__</span> <span class="n">document</span> <span class="n">language</span>
+
+<span class="p">[</span><span class="n">literate</span> <span class="n">programming</span><span class="p">]:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">literateprogramming</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">knuthweb</span><span class="o">.</span><span class="n">pdf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/syllabus/syllabus/docs/i.md.ipynb</span>, line 1)</p>
+<p>Non-consecutive header level increase; 0 to 3 [myst.header]</p>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">m</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Literate_programming</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<iframe
+    width="100%"
+    height="600"
+    src="https://en.m.wikipedia.org/wiki/Literate_programming"
+    frameborder="0"
+    allowfullscreen
+></iframe>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### modern literate programming</span>
+
+<span class="o">*</span> <span class="n">__python__</span> <span class="n">programming</span> <span class="n">language</span>
+<span class="o">*</span> <span class="n">__markdown__</span> <span class="n">document</span> <span class="n">language</span>
+
+<span class="n">it</span> <span class="ow">is</span> <span class="n">clear</span> <span class="n">we</span> <span class="n">won</span><span class="s1">&#39;t be writing programs in pascal so we are going to take a modern riff on literate programming.</span>
+
+<span class="c1">#### in markdown</span>
+
+<span class="n">markdown</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">best</span> <span class="n">language</span><span class="p">,</span> <span class="n">it</span> <span class="n">never</span> <span class="n">lets</span> <span class="n">you</span> <span class="n">fail</span><span class="p">,</span> <span class="n">it</span> <span class="n">just</span> <span class="n">does</span> <span class="n">unexpected</span> <span class="n">things</span><span class="o">.</span>
+<span class="ow">in</span> <span class="n">our</span> <span class="n">course</span><span class="p">,</span> <span class="n">we</span><span class="s1">&#39;ll focus on __markdown__ as the document language. tools like __tex__ and __rst__</span>
+<span class="n">border</span> <span class="n">on</span> <span class="n">domain</span> <span class="n">specific</span> <span class="n">languages</span><span class="p">,</span> <span class="ow">and</span> <span class="n">can</span> <span class="n">be</span> <span class="n">wrought</span> <span class="k">with</span> <span class="n">failure</span><span class="o">.</span>
+
+<span class="n">markdown</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">tool</span> <span class="k">for</span> <span class="n">literate</span> <span class="n">programming</span> <span class="n">because</span> <span class="n">it</span> <span class="n">considers</span> <span class="nb">all</span> <span class="n">possible</span> <span class="n">programming</span> <span class="n">lanuages</span>
+<span class="n">within</span> <span class="n">its</span> <span class="n">specificiation</span>
+
+<span class="p">{{</span><span class="n">md</span><span class="p">}}</span>
+
+<span class="c1">#### in notebooks</span>
+
+<span class="n">notebooks</span> <span class="n">are</span> <span class="n">an</span> <span class="n">ideal</span> <span class="n">substrate</span> <span class="k">for</span> <span class="n">literate</span> <span class="n">programs</span><span class="o">.</span> <span class="n">it</span> <span class="n">promotes</span> <span class="n">the</span> <span class="n">interleaving</span> <span class="n">of</span> <span class="n">__markdown__</span>
+<span class="ow">and</span> <span class="n">code</span> <span class="n">cells</span> <span class="n">to</span> <span class="n">bring</span> <span class="n">meaning</span> <span class="n">to</span> <span class="n">code</span><span class="o">.</span>
+
+<span class="p">{{</span><span class="n">nb</span><span class="p">}}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/syllabus/syllabus/docs/i.md.ipynb</span>, line 1)</p>
+<p>Non-consecutive header level increase; 0 to 3 [myst.header]</p>
+</div>
+</div>
+</div>
+<div class="section" id="you-are-your-first-audience">
+<h2>you are your first audience<a class="headerlink" href="#you-are-your-first-audience" title="Permalink to this headline">¶</a></h2>
+<p>you the writer contain multitudes, you have many audiences, and most attempts
+to write to an idealized audience will hamper the connection between you and your work.</p>
+<div class="section" id="guidance-for-you-your-first-audience">
+<h3>guidance for you, your first audience<a class="headerlink" href="#guidance-for-you-your-first-audience" title="Permalink to this headline">¶</a></h3>
+<p>while writing,
+write for yourself,
+write something you want to read,
+write the documentation you think is needed,
+write the blog post you wish was written.</p>
+</div>
+</div>
+<div class="section" id="bounding-your-ideas">
+<h2>bounding your ideas<a class="headerlink" href="#bounding-your-ideas" title="Permalink to this headline">¶</a></h2>
+<p>a good check for bounding your work is does it <strong>restart and run all</strong>? we will not impose this constraint
+on our essays just yet. a writer always knows there is more they want to write, with time, you’ll get there. for now, try to write about one small idea at a time, if you start adding ideas as if they are needed.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## until next time</span>
+
+<span class="c1">### things to think about</span>
+
+<span class="o">*</span> <span class="n">what</span> <span class="n">do</span> <span class="n">you</span> <span class="n">need</span> <span class="n">to</span> write<span class="o">?</span>
+<span class="o">*</span> <span class="n">what</span> <span class="n">are</span> <span class="n">some</span> <span class="n">small</span> <span class="n">things</span> <span class="n">you</span><span class="s1">&#39;ve</span>
+
+<span class="c1">### writings prompts</span>
+
+<span class="o">*</span> <span class="n">write</span> <span class="n">a</span> <span class="n">document</span> <span class="n">containing</span> <span class="n">code</span> <span class="ow">and</span> <span class="n">narrative</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">notebook</span> <span class="ow">or</span> <span class="n">file</span><span class="o">.</span>
+
+  <span class="c1">### examples</span>
+  
+  <span class="o">*</span> <span class="p">[</span><span class="n">sharing</span> <span class="n">documents</span><span class="p">]</span> <span class="n">on</span> <span class="n">google</span> <span class="ow">or</span> <span class="n">github</span>
+  <span class="o">*</span> <span class="p">[</span><span class="n">about</span> <span class="n">me</span><span class="p">]</span>
+  
+<span class="o">*</span> <span class="n">share</span> <span class="n">your</span> <span class="n">document</span> <span class="k">as</span> <span class="n">a</span> <span class="n">gist</span><span class="p">,</span> <span class="n">repo</span><span class="p">,</span> <span class="ow">or</span> <span class="n">colab</span> <span class="n">notebook</span>
+
+  <span class="c1">### examples</span>
+  
+<span class="o">*</span> <span class="n">begin</span> <span class="n">working</span> <span class="n">on</span> <span class="n">your</span> <span class="n">github</span> <span class="n">readme</span> <span class="n">profile</span>
+
+  <span class="c1">### examples</span>
+  
+  <span class="o">*</span> <span class="p">[</span><span class="n">monica</span><span class="p">]</span>
+  <span class="o">*</span> <span class="p">[</span><span class="n">tonyfast</span><span class="p">]</span>
+  <span class="o">*</span> <span class="p">[</span><span class="n">simonw</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<span class="docutils literal">/home/runner/work/syllabus/syllabus/docs/i.md.ipynb</span>, line 1)</p>
+<p>Non-consecutive header level increase; 0 to 2 [myst.header]</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="background">
+<h2>background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>this section includes background, and links, to concepts that help to be familiar with when learning to write literate programs.</p>
+<div class="section" id="markdown-syntax">
+<h3>markdown syntax<a class="headerlink" href="#markdown-syntax" title="Permalink to this headline">¶</a></h3>
+<p>for the purposes of this course we all program in markdown. markdown is our programming language. it lets us combine all programming languages into one document.</p>
+<div class="section" id="widespread-adoption">
+<h4>widespread adoption<a class="headerlink" href="#widespread-adoption" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><p>we will discuss the readme at length in this program and this cultural adoption of <code class="docutils literal notranslate"><span class="pre">readme</span></code> markdown files as a convention.</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="literate-programming">
+<h3>literate programming<a class="headerlink" href="#literate-programming" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="computational-notebook-interfaces">
+<h3>computational notebook interfaces<a class="headerlink" href="#computational-notebook-interfaces" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="computational-notebook-formats">
+<h3>computational notebook formats<a class="headerlink" href="#computational-notebook-formats" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="writing-things-you-ll-want-to-read">
+<h2>writing things you’ll want to read<a class="headerlink" href="#writing-things-you-ll-want-to-read" title="Permalink to this headline">¶</a></h2>
+<p>it is hard to know our audience, but we can learn about ourselves. we tasked with creating a work for these programs focus on writing what you may want to read in the future. be your best audience.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "pidgy"
+        },
+        kernelOptions: {
+            kernelName: "pidgy",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'pidgy'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By quansight<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
