@@ -3,3 +3,6 @@ _build
 *.pyc
 .doit*
 Untitled*
+# pixi environments
+.pixi
+*.egg-info

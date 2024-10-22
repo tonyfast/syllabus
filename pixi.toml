@@ -1,0 +1,22 @@
+[project]
+authors = ["tonyfast <tony.fast@gmail.com>"]
+channels = ["conda-forge", "robostack", "bioconda", "nvidia", "pytorch"]
+description = "Literate programming"
+name = "literate-programming-1"
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+doit = { cmd = "doit" }
+docs = { cmd = " docs" }
+build = { cmd = "touch _build/html/.nojekyll" }
+
+
+[dependencies]
+doit = "*"
+importnb = "*"
+jupyter-book ="*"
+rich = "*"
+
+[pypi-dependencies]
+sphinx_sitemap = "*"
